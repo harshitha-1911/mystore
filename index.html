@@ -5,16 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yum Yum</title>
     <style>
+        /* * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }  */
+        body {
+            background-color: #f8f1e4;
+        }
         .header {
-        background-color:rgb(233, 193, 130);
+        background-color:rgb(204, 133, 18);
         display: flex;
         justify-content: space-between;
-        padding: 10px;
+        align-items: center;
+        padding: 15px 30px;
         font-style: italic;
+        box-shadow: 0 4px 8px rgba(0 ,0 , 0, 0.2);
     }
 
      a {
         text-decoration: none;
+        transition: color 0.3s;
+        font-size: 18px;
     }
 
      li {
@@ -25,7 +38,20 @@
     a:hover {
         text-decoration: underline;
     }
-
+    button {
+            background-color: #eec049;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background 0.3s;
+    }
+    button:hover {
+            background-color: #decb4f8a;
+            transform:translateY(-5px);
+    }
     .row {
         justify-content: center;
         display: flex;
@@ -34,7 +60,7 @@
         align-items: center;
     }
 
-    .row .box {
+    /* .row .box {
         border: solid 5px silver;
         padding: 10px;
         margin: 10px;
@@ -42,8 +68,23 @@
         border-radius: 20px;
 
 
-    }
-
+    } */
+    .box {
+            background: white;
+            border-radius: 15px;
+            padding: 10px;
+            text-align: center;
+            margin: 10px;
+            width: 400px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+    .box img {
+            border-radius: 10px;
+        }
+        /* .box:hover {
+            transform: translateY(-5px);
+        } */
     .row2 {
         display: flex;
         justify-content: center;
@@ -66,10 +107,16 @@
     .row2 .box h4 {
         color: gray;
     }
-    
+    .row2 img {
+            max-width: 100%;
+            border-radius: 10px;
+    }
     .footer {
-        background-color: blanchedalmond;
+        background-color: rgb(222, 193, 26);
         text-align: center;
+        padding: 13px;
+            font-weight: bold;
+            
      }
     </style> 
 </head>
@@ -94,50 +141,50 @@
             <div class="box">
                 <img src="assets/images/1.jpg" width="400"
                     height="350">
-                <h3>Milkshake</h3>
-                <h4>Enjoy the flavored drink..</h4>
+                <h2>Milkshake</h2>
+                <h3>Enjoy the flavored drink..</h3>
                 Prize:$150 
-                <button>Add to Cart</button>
+                <p><button>Add to Cart</button></p>
             </div>
             <div class="box">
                 <img src="assets/images/2.webp" width="400"
                     height="350">
-                <h3>Pancake</h3>
-                <h4>Happiness is a stack of Pancakes..</h4>
+                <h2>Pancake</h2>
+                <h3>Happiness is a stack of Pancakes..</h3>
                 Prize:$200 
-                <button>Add to Cart</button>
+                <p><button>Add to Cart</button></p>
             </div>
             <div class="box">
                 <img src="assets/images/3.webp"
                     width="400" height="350">
-                <h3>Gulab Jamun</h3>
-                <h4>Soft and fluffy rose water berry..</h4>
+                <h2>Gulab Jamun</h2>
+                <h3>Soft and fluffy rose water berry..</h3>
                 Prize:$250
-                <button>Add to Cart</button>
+                <p><button>Add to Cart</button></p>
             </div>
         </div>
-        <div class="row2">
+        <div class="row2" style="background-color: #f0c761;">
             <img src="assets/images/4.jpg"
                 width="600" height="500">
             <div class="box">
-                <h3 >
+                <h2 >
                     <center>
                     Description</center>
-                </h3>
-                <h4>
+                </h2>
+                <h3>
                    Sweets are the things which melts our hearts and which flavours our mouth.When something is described as “sweet,” it means it has a pleasant, sugary flavor that satisfies our cravings for dessert or treats. However, sweetness isn’t limited to just sugary foods; it encompasses a range of sensations, from the gentle and mild to the intensely saccharine.
-                </h4>
+                </h3>
             </div>
         </div>
-        <div class="row2" style="background-color:rgb(141, 219, 231)">
+        <div class="row2" style="background-color:rgb(234, 213, 116)">
             <div class="box">
-                <h3 >
+                <h2 >
                     <center>
                     Description</center>
+                </h2>
+                <h3>Sweets, candies, and chocolates are loved by people of all ages. Candies range from hard lollipops to chewy gummies, while chocolates come in dark, milk, and white varieties. Pastries like cakes, cookies, and donuts are perfect with tea or coffee. Ice cream and sorbets offer a refreshing treat, especially in warm weather. Traditional sweets like baklava, mochi, and halwa add cultural richness to the world of desserts. No matter the type, sweet treats bring joy and comfort.
                 </h3>
-                <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam repellat expedita, veritatis quasi beatae quis corporis doloremque nulla perspiciatis tempora, cumque laborum possimus officiis deleniti unde temporibus adipisci ut voluptates.
-                </h4>
-            </div>
+                </div>
             <img src="assets/images/5.jpg"
                 width="600" height="500">
 
@@ -146,7 +193,7 @@
 
     <div class="footer">
         <div>
-            <footer>@Copyright 2024.All Rights Reserverd.</footer>
+            <footer><h3>@Copyright 2024.All Rights Reserverd.</h3></footer>
         </div>
     </div>
     </div>
